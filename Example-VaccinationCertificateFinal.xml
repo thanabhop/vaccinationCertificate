@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="1afa55c0-ba99-4d76-90d4-87c947b379d6"/>
+  <language value="en"/>
+  <identifier>
+    <system value="https://myvax.kku.ac.th"/>
+    <value value="urn:uvci:01:TH:001377700/1142178009/0000000001"/>
+    <period>
+      <start value="2021-06-26T14:30:00+07:00"/>
+    </period>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2021-06-26T14:30:00+07:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-1e639094ad4d"/>
+    <resource>
+      <Composition>
+        <id value="30551ce1-5a28-4356-b684-1e639094ad4d"/>
+        <identifier>
+          <system value="https://standard.etda.or.th/"/>
+          <value value="2.16.764.1.4.1.1.8.1.1"/>
+        </identifier>
+        <identifier>
+          <system value="https://standard.etda.or.th/version"/>
+          <value value="1.0"/>
+        </identifier>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82593-5"/>
+            <display value="Immunization summary report"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+        </subject>
+        <date value="2021-06-26T14:30:00+07:00"/>
+        <author>
+          <reference value="urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+        </author>
+        <title value="Vaccination Certificate"/>
+        <attester>
+          <mode value="legal"/>
+          <time value="2021-06-26T14:30:00+07:00"/>
+          <party>
+            <reference value="urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"/>
+          </party>
+        </attester>
+        <section>
+          <title value="Vaccinations"/>
+          <code>
+            <coding>
+              <system value="http://loinc.org"/>
+              <code value="11369-6"/>
+              <display value="Hx of Immunization"/>
+            </coding>
+          </code>
+          <entry>
+            <reference value="urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+          </entry>
+          <entry>
+            <reference value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e"/>
+          </entry>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+    <resource>
+      <Patient>
+        <id value="2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="NNTHA"/>
+              <display value="National Person Identifier"/>
+            </coding>
+          </type>
+          <value value="1409900727666"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PPN"/>
+              <display value="Passport number"/>
+            </coding>
+          </type>
+          <value value="AA1234567"/>
+        </identifier>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MR"/>
+              <display value="Medical record number"/>
+            </coding>
+          </type>
+          <system value="https://myvax.kku.ac.th"/>
+          <value value="AB12345"/>
+        </identifier>
+        <name>
+          <family value="Na Nakhonphanom"/>
+          <given value="Thanaphop"/>
+          <prefix value="MR."/>
+          <language value="en"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1990-12-14"/>
+        <address>
+          <country value="TH"/>
+        </address>
+        <extension url="http://hl7.org/fhir/StructureDefinition/patient-nationality">
+          <code>
+            <coding>
+              <system value="urn:iso:std:iso:3166"/>
+              <code value="TH"/>
+              <display value="Thailand"/>
+            </coding>
+          </code>
+        </extension>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+    <resource>
+      <Organization>
+        <id value="45a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd7"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider number"/>
+            </coding>
+          </type>
+          <system value="http://203.157.10.8/hcode_2020/index.html"/>
+          <value value="001377700"/>
+        </identifier>
+        <name value="Srinagarind Hospital, Khon Kaen University"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="+6643363387"/>
+        </telecom>
+        <address>
+          <line value="123 Mittraparp Highway, Muang District, Khon Kaen"/>
+          <country value="TH"/>
+          <postalCode value="40002"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"/>
+    <resource>
+      <Practitioner>
+        <id value="55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="LN"/>
+              <display value="License number"/>
+            </coding>
+          </type>
+          <value value="100001"/>
+          <assigner>
+            <identifier>
+              <type>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                  <code value="XX"/>
+                  <display value="Organization identifier"/>
+                </coding>
+              </type>
+              <system value="http://203.157.10.8/hcode_2020/index.html"/>
+              <value value="001225400"/>
+            </identifier>
+            <display value="Department of disease control, Ministry of Public Health, Thailand"/>
+          </assigner>
+        </identifier>
+        <name>
+          <family value="Na Nakhonphanom"/>
+          <given value="Thanaphop"/>
+          <prefix value="Dr."/>
+          <language value="en"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="thanapna@kku.ac.th"/>
+        </telecom>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+    <resource>
+      <Immunization>
+        <id value="c220e36c-eb67-4fc4-9ba1-2fabc52acec6"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="VN"/>
+              <display value="Visit number"/>
+            </coding>
+          </type>
+          <system value="https://myvax.kku.ac.th"/>
+          <value value="VC202104210000000001"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1NL1"/>
+            <display value="COVID-19 vaccine, inactivated virus"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119305005"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 antigen only vaccine product"/>
+          </coding>
+          <coding>
+            <system value="https://www.whocc.no/atc_ddd_index"/>
+            <code value="J07BX03"/>
+            <display value="Covid-19 vaccines"/>
+          </coding>
+          <coding>
+            <system value="https://tmt.this.or.th"/>
+            <code value="1178033"/>
+            <display value="CORONAVAC (SINOVAC LIFE SCIENCES, CHINA) (sars-cov-2 vaccine (vero cell), inactivated 600 SU/0.5 mL) suspension for injection, 0.5 mL vial (TPU)"/>
+          </coding>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="213"/>
+            <display value="SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"/>
+          </coding>
+          <text value="CoronaVac"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+        </patient>
+        <occurrenceDateTime value="2021-04-21"/>
+        <manufacturer>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+                <display value="Organization identifier"/>
+              </coding>
+            </type>
+            <system value="https://tmt.this.or.th"/>
+            <value value="1178022"/>
+          </identifier>
+          <display value="SINOVAC LIFE SCIENCES, CHINA"/>
+        </manufacturer>
+        <lotNumber value="K202103018"/>
+        <performer>
+          <actor>
+            <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-ff5a84a41fd7"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="XN109"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840533007"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+            <text value="SARS-CoV-2"/>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="RA01"/>
+              <display value="COVID-19"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840539006"/>
+              <display value="COVID-19"/>
+            </coding>
+            <text value="COVID-19"/>
+          </targetDisease>
+          <doseNumberPositiveInt value="1"/>
+          <seriesDosesPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f02e"/>
+    <resource>
+      <Immunization>
+        <id value="47524493-846a-4a26-bae2-4ab03e60f02e"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="VN"/>
+              <display value="Visit number"/>
+            </coding>
+          </type>
+          <system value="https://myvax.kku.ac.th"/>
+          <value value="VC202105190000000001"/>
+        </identifier>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="XM1NL1"/>
+            <display value="COVID-19 vaccine, inactivated virus"/>
+          </coding>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="1119305005"/>
+            <display value="Severe acute respiratory syndrome coronavirus 2 antigen only vaccine product"/>
+          </coding>
+          <coding>
+            <system value="https://www.whocc.no/atc_ddd_index"/>
+            <code value="J07BX03"/>
+            <display value="Covid-19 vaccines"/>
+          </coding>
+          <coding>
+            <system value="https://tmt.this.or.th"/>
+            <code value="1178033"/>
+            <display value="CORONAVAC (SINOVAC LIFE SCIENCES, CHINA) (sars-cov-2 vaccine (vero cell), inactivated 600 SU/0.5 mL) suspension for injection, 0.5 mL vial (TPU)"/>
+          </coding>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/cvx"/>
+            <code value="213"/>
+            <display value="SARS-COV-2 (COVID-19) vaccine, UNSPECIFIED"/>
+          </coding>
+          <text value="CoronaVac"/>
+        </vaccineCode>
+        <patient>
+          <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+        </patient>
+        <occurrenceDateTime value="2021-05-19"/>
+        <manufacturer>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+                <display value="Organization identifier"/>
+              </coding>
+            </type>
+            <system value="https://tmt.this.or.th"/>
+            <value value="1178022"/>
+          </identifier>
+          <display value="SINOVAC LIFE SCIENCES, CHINA"/>
+        </manufacturer>
+        <lotNumber value="K202103018"/>
+        <performer>
+          <actor>
+            <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-ff5a84a41fd7"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="XN109"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840533007"/>
+              <display value="SARS-CoV-2"/>
+            </coding>
+            <text value="SARS-CoV-2"/>
+          </targetDisease>
+          <targetDisease>
+            <coding>
+              <system value="http://id.who.int/icd11/mms"/>
+              <code value="RA01"/>
+              <display value="COVID-19"/>
+            </coding>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="840539006"/>
+              <display value="COVID-19"/>
+            </coding>
+            <text value="COVID-19"/>
+          </targetDisease>
+          <doseNumberPositiveInt value="2"/>
+          <seriesDosesPositiveInt value="2"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f03a"/>
+    <resource>
+      <Provenance>
+        <id value="47524493-846a-4a26-bae2-4ab03e60f03a"/>
+        <target>
+          <reference value="urn:uuid:1afa55c0-ba99-4d76-90d4-87c947b379d6"/>
+        <recorded value="2021-06-26T14:30:00+07:00"/>
+        <agent>
+          <type>
+            <coding>
+             <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+             <code value="legal"/>
+             <display value="Legal Authenticator"/>
+            </coding>
+            <text value="Certificate Authority"/>
+          </type>
+          <who>
+            <reference value="urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"/>
+          </who>
+        </agent>
+        <signature>
+          <type>
+            <coding>
+             <system value="http://hl7.org/fhir/R4/codesystem-signature-type.html"/>
+             <code value="1.2.840.10065.1.12.1.18"/>
+             <display value="Timestamp Signature"/>
+            </coding>
+          </type>
+          <when value="2021-06-26T14:30:00+07:00"/>
+          <who>
+            <reference value="urn:uuid:55a5c5b1-4ec1-4d60-b4b2-ff5a84a41fd8"/>
+          </who>
+          <data value=""/>
+        </signature>
+      </Provenance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:47524493-846a-4a26-bae2-4ab03e60f04d"/>
+    <resource>
+      <Binary>
+        <id value="47524493-846a-4a26-bae2-4ab03e60f04d"/>
+        <contentType value="image/png">
+        <data value=""/>
+      </Binary>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:30551ce1-5a28-4356-b684-4ab03e60f05e"/>
+    <resource>
+      <DocumentReference>
+        <id value="30551ce1-5a28-4356-b684-4ab03e60f05e"/>
+        <masterIdentifier>
+          <system value="https://co19cert.moph.go.th/"/>
+          <value value="{16E58BC9-D125-4962-9A65-A264C3C10ABA}"/>
+        </masterIdentifier>
+        <identifier>
+          <system value="https://co19cert.moph.go.th/"/>
+          <value value="0000855723"/>
+        </identifier>
+        <status value="current"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="55107-7"/>
+            <display value="Addendum Document"/>
+          </coding>
+        </type>
+        <category>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="82593-5"/>
+            <display value="Immunization summary report"/>
+          </coding>
+        </category>
+        <subject>
+          <reference value="urn:uuid:2b90dd2b-2dab-4c75-9bb9-a355e07401e8"/>
+        </subject>
+        <authenticator>
+          <identifier>
+            <type>
+              <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                <code value="XX"/>
+                <display value="Organization identifier"/>
+              </coding>
+            </type>
+            <system value="http://203.157.10.8/hcode_2020/index.html"/>
+            <value value="001225400"/>
+          </identifier>
+          <display value="Department of disease control, Ministry of Public Health, Thailand"/>
+        </authenticator>
+        <content>
+          <attachment>
+            <url value="https://co19cert.moph.go.th/cert?id={16E58BC9-D125-4962-9A65-A264C3C10ABA}"/>
+            <title value="Thailand National Certificate of COVID-19 Vaccination"/>
+          </attachment>
+        </content>
+      </DocumentReference>
+    </resource>
+  </entry>
+</Bundle>
