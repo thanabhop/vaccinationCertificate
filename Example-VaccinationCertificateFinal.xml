@@ -5,7 +5,7 @@
   <language value="en"/>
   <identifier>
     <system value="https://myvax.kku.ac.th"/>
-    <value value="urn:uvci:01:TH:001377700/1142178009/0000000001"/>
+    <value value="urn:uvci:01:TH:001377700/28531000087107/0000000001"/>
     <period>
       <start value="2021-06-26T14:30:00+07:00"/>
     </period>
@@ -211,7 +211,7 @@
             </coding>
           </type>
           <system value="https://myvax.kku.ac.th"/>
-          <value value="VC202104210000000001"/>
+          <value value="VC20210421/28531000087107/0000000001"/>
         </identifier>
         <status value="completed"/>
         <vaccineCode>
@@ -222,8 +222,8 @@
           </coding>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="1119305005"/>
-            <display value="Severe acute respiratory syndrome coronavirus 2 antigen only vaccine product"/>
+            <code value="1157024006"/>
+            <display value="Inactivated whole SARS-CoV-2 antigen vaccine"/>
           </coding>
           <coding>
             <system value="https://www.whocc.no/atc_ddd_index"/>
@@ -313,7 +313,7 @@
             </coding>
           </type>
           <system value="https://myvax.kku.ac.th"/>
-          <value value="VC202105190000000001"/>
+          <value value="VC20210519/28531000087107/0000000001"/>
         </identifier>
         <status value="completed"/>
         <vaccineCode>
@@ -324,8 +324,8 @@
           </coding>
           <coding>
             <system value="http://snomed.info/sct"/>
-            <code value="1119305005"/>
-            <display value="Severe acute respiratory syndrome coronavirus 2 antigen only vaccine product"/>
+            <code value="1157024006"/>
+            <display value="Inactivated whole SARS-CoV-2 antigen vaccine"/>
           </coding>
           <coding>
             <system value="https://www.whocc.no/atc_ddd_index"/>
